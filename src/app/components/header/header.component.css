@@ -1,0 +1,61 @@
+header {
+	display: flex;
+	flex: 1;
+	height: 65px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+	background-color: white;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+header a {
+	padding: 1em;
+	text-decoration: none;
+	color: black;
+}
+
+header a.menu {
+	position: relative;
+}
+
+/*Prevent pointer event and only catch parent as the target.*/
+header a.menu i {
+	pointer-events: none;
+}
+
+header a.menu:before {
+	content: "";
+	position: absolute;
+	left: -5px;
+	top: 50%;
+	transform: translateY(-70%);
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent; 
+	border-right:8px solid #0F1B35; 
+	width: 0;
+	height: 0;
+	transition: all 0.3s;
+}
+
+
+header a.menu.clicked:before {
+	border-right:0px solid transparent;
+	border-left:8px solid #132144;
+}
+
+header a.addProject {
+	background-color: #5684FE;
+	border-radius: 20px;
+	padding: 0.5em 1em;
+	color: white;
+	transition: all 0.3s;
+}
+
+header a.addProject:hover {
+	background-color: #F93B7B;
+}
+
+.fa {
+	font-size: 1.5em;
+}

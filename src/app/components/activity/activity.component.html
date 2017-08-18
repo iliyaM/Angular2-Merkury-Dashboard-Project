@@ -1,0 +1,25 @@
+<div class="controls">
+	<h1>Activity</h1>
+	<div class="counters">
+		<!-- length of array of messages -->
+		<span class="activity_counter">
+			{{activities.length}}
+		</span>
+	</div>
+</div>
+<ul class="activities">
+	<li *ngFor="let activity of activities">
+		<figure><img src="{{activity.icon}}" alt="{{activity.userName}}"></figure>
+		<div class="activity_container">
+			<h2>
+				{{activity.userName}}
+				<span class="random_activity">{{activity.activity}}</span>
+				{{activity.projectName}}
+			</h2>
+				<span class="time">
+					<i class="fa fa-clock-o"></i>
+					{{activity.time}} minutes ago
+				</span>
+		</div>
+	</li>
+</ul>

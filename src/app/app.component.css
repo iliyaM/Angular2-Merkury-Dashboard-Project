@@ -1,0 +1,15 @@
+section.layout {
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+.column-right {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	overflow-x: hidden;
+}

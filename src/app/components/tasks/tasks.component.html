@@ -1,0 +1,34 @@
+<div class="controls">
+	<h1>Tasks</h1>
+	<div class="counters">
+		<!-- length of array of messages -->
+		<span class="task_counter">
+			{{tasks.length}}
+		</span>
+		<!-- Shoes number of delayed messages -->
+		<span class="delayed_counter">
+			{{ delayedCounter }}
+		</span>
+	</div>
+</div>
+<ul class="tasks">
+	<li *ngFor="let task of tasks">
+		<img src="{{task.icon}}" alt="">
+
+		<!-- Container with display condition of delayed -->
+		<div class="task_container">
+			<h2>{{task.title}}</h2>
+			<p *ngIf="task.status === 'delayed'" class="delayed">
+				<i class="fa fa-clock-o"></i>
+				task delayed
+			</p>
+		</div>
+
+		<!-- Select options with on change method passed value and message id -->
+		<select #select (change)="delayStateUpdate(task.id, select.value)" class="delay_menu">
+			<option>Change Status</option>
+			<option value="delayed">delay</option>
+			<option value="notDelayed">notDelay</option>
+		</select>
+	</li>
+</ul>

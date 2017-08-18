@@ -1,0 +1,14 @@
+div.notfound  {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	height: 70vh;
+}
+
+div.notfound h1 {
+	color: #132144;
+	font-weight: 400;
+	font-size: 3em;
+	text-decoration: underline;
+}

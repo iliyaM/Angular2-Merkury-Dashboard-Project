@@ -1,0 +1,40 @@
+<div class="sidebar" [ngClass]="{'active':isOpen}">
+	<!-- Div container with logo png -->
+	<div class="logo">
+		<img src="./assets/logo.png" alt="">
+	</div>
+	<!-- list items with active state on LI with link and image inside -->
+	<ul>
+	<!-- homepage link -->
+		<li routerLinkActive="active">
+			<img src="./assets/home.png" alt=""> 
+			<a routerLink="/home" >Home
+			</a> 
+		</li>
+		<!-- workflow link -->
+		<li routerLinkActive="active">
+			<img src="./assets/workflow.png" alt="">
+			 <a routerLink="/workflow" >Workflow</a>
+		</li>
+		<!-- statistics link -->
+		<li routerLinkActive="active">
+			<img src="./assets/statistics.png" alt=""> 
+			<a  routerLink="/statistics" >Statistics</a> 
+		</li>
+		<!-- calendar link -->
+		<li routerLinkActive="active">
+			<img src="./assets/calendar.png" alt=""> 
+			<a routerLink="/calendar" >Calendar</a> 
+		</li>
+		<!-- users link -->
+		<li routerLinkActive="active">
+			<img src="./assets/users.png" alt=""> 
+			<a routerLink="/users" >Users</a> 
+		</li>
+		<!-- settings link -->
+		<li routerLinkActive="active">
+			<img src="./assets/settings.png" alt=""> 
+			<a routerLink="/settings" >Settings</a>
+		 </li>
+	</ul>
+</div>

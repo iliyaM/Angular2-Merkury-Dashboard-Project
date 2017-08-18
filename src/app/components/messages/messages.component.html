@@ -1,0 +1,25 @@
+<div class="controls">
+	<h1>Messages</h1>
+	<div class="counters">
+		<!-- length of array of messages -->
+		<span class="message_counter">
+			{{messages.length}}
+		</span>
+	</div>
+</div>
+<ul class="messages">
+	<li *ngFor="let message of messages">
+		<img src="{{message.icon}}" alt="">
+		<div class="message_container">
+			<h2>
+				{{message.title}}
+				<span class="time">{{message.time}} minutes ago</span>
+			</h2>
+			<p>{{message.content}}</p>
+			<div class="icons">
+				<i class="fa fa-undo"></i>
+				<i class="fa fa-cog"></i>
+			</div>
+		</div>
+	</li>
+</ul>
