@@ -25,8 +25,8 @@
 		</div>
 
 		<!-- Select options with on change method passed value and message id -->
-		<select #select (change)="delayStateUpdate(task.id, select.value)" class="delay_menu">
-			<option>Change Status</option>
+		<select #select (change)="delayStateUpdate(task.id, select.value)" class="delay_menu" placeholder="test">
+			<option>Status</option>
 			<option value="delayed">delay</option>
 			<option value="notDelayed">notDelay</option>
 		</select>

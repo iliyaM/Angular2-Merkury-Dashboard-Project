@@ -27,8 +27,10 @@ updateConter = function(){
 
 //Function runs on change event. emits id of message and value of selected option.
 delayStateUpdate(id, value) {
-	//Finds message by id and sets its key status value to provided value
-	const task = this.tasks.find(task => task.id === id).status = value;
+	if (value === 'delayed'|| value === 'notDelayed') {
+		//Finds message by id and sets its key status value to provided value
+		const task = this.tasks.find(task => task.id === id).status = value;
+	}
 
 	// Runs the update function after resetting status value to check if needs to update counter.
 	this.updateConter();
