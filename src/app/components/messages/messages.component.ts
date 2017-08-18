@@ -10,7 +10,7 @@ export class MessagesComponent implements OnInit {
 messages:Array<any> = [
 	{id:20, icon: './assets/male2.png', title: "Nina Jones", content: "Hey You! it's me again :-) I attached new(...)", time: this.getCurrentTime()},
 	{id:20, icon: './assets/male2.png', title: "Nina Jones", content: "Hey! I attached some new PSD files for (...)", time: this.getCurrentTime()},
-	{id:20, icon: './assets/male.png', title: "James Smith", content: "Good morningm you are fired!", time: this.getCurrentTime()},
+	{id:20, icon: './assets/male.png', title: "James Smith", content: "Good morning you are fired!", time: this.getCurrentTime()},
 	{id:20, icon: './assets/male2.png', title: "Nina Jones", content: "Hello! Could You bring me coffe please?", time: this.getCurrentTime()}
 ];
 
