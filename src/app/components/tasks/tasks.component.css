@@ -83,3 +83,11 @@ ul.tasks li select {
 	height: 50%;
 	border: 1px solid #d3d3d3;
 }
+
+ul.tasks li select option:nth-of-type(2) {
+	color: #F93B7B;
+}
+
+ul.tasks li select option:nth-of-type(3) {
+	color: #1D936B;
+}
